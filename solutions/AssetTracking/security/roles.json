@@ -1,0 +1,28 @@
+{
+  "roles": [
+    {
+      "name": "AssetTracking - Admin",
+      "description": "Full access to all solution components",
+      "privileges": {
+        "tables": "CRUD (Create, Read, Update, Delete) on all tables",
+        "scope": "Organization"
+      }
+    },
+    {
+      "name": "AssetTracking - User",
+      "description": "Standard user access",
+      "privileges": {
+        "tables": "Create, Read own, Update own",
+        "scope": "User"
+      }
+    },
+    {
+      "name": "AssetTracking - Viewer",
+      "description": "Read-only access",
+      "privileges": {
+        "tables": "Read only",
+        "scope": "Business Unit"
+      }
+    }
+  ]
+}

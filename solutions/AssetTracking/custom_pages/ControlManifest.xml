@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="CustomPages" constructor="ItemScanner" version="1.0.0" display-name-key="ItemScanner" description-key="Barcode scanner for inventory tracking">
+    <type-group name="scanners">
+      <type>SingleLine.Text</type>
+    </type-group>
+    <property name="scannedBarcode" display-name-key="Scanned Barcode" description-key="Barcode value" of-type-group="scanners" usage="output" required="false" />
+  </control>
+</manifest>

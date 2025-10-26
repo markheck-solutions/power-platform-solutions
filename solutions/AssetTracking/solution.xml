@@ -1,0 +1,32 @@
+<!-- Solution XML structure based on: {
+  "ImportExportXml": {
+    "version": "[IP_ADDRESS]",
+    "SolutionManifest": {
+      "UniqueName": "assettracking",
+      "LocalizedNames": {
+        "LocalizedName": {
+          "description": "AssetTracking - Generated Solution",
+          "languagecode": "1033"
+        }
+      },
+      "Descriptions": {
+        "Description": {
+          "description": "Auto-generated tracking solution",
+          "languagecode": "1033"
+        }
+      },
+      "Version": "[IP_ADDRESS]",
+      "Managed": "0",
+      "Publisher": {
+        "UniqueName": "powerplatformorchestrator",
+        "LocalizedNames": {
+          "LocalizedName": {
+            "description": "Power Platform Orchestrator",
+            "languagecode": "1033"
+          }
+        }
+      }
+    }
+  }
+} -->
+<!-- Use Power Platform CLI to generate proper solution.xml -->

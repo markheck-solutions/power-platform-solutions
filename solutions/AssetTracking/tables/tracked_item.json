@@ -1,0 +1,83 @@
+{
+  "logicalName": "cr_trackeditem",
+  "displayName": "Tracked Item",
+  "pluralName": "Tracked Items",
+  "description": "Tracks physical items with location and status",
+  "attributes": [
+    {
+      "logicalName": "cr_name",
+      "displayName": "Item Name",
+      "type": "String",
+      "required": true
+    },
+    {
+      "logicalName": "cr_barcode",
+      "displayName": "Barcode/Tag ID",
+      "type": "String",
+      "required": false
+    },
+    {
+      "logicalName": "cr_location",
+      "displayName": "Location",
+      "type": "Lookup",
+      "target": "cr_location",
+      "required": true
+    },
+    {
+      "logicalName": "cr_status",
+      "displayName": "Status",
+      "type": "OptionSet",
+      "options": [
+        {
+          "value": 1,
+          "label": "Available"
+        },
+        {
+          "value": 2,
+          "label": "In Use"
+        },
+        {
+          "value": 3,
+          "label": "Maintenance"
+        },
+        {
+          "value": 4,
+          "label": "Retired"
+        }
+      ]
+    },
+    {
+      "logicalName": "cr_assignedto",
+      "displayName": "Assigned To",
+      "type": "Lookup",
+      "target": "systemuser"
+    },
+    {
+      "logicalName": "cr_category",
+      "displayName": "Category",
+      "type": "String"
+    },
+    {
+      "logicalName": "cr_lastscanned",
+      "displayName": "Last Scanned",
+      "type": "DateTime"
+    },
+    {
+      "logicalName": "cr_notes",
+      "displayName": "Notes",
+      "type": "Memo"
+    }
+  ],
+  "views": [
+    "Active Items",
+    "Items by Location",
+    "Available Items",
+    "All Items"
+  ],
+  "forms": [
+    "Main Form",
+    "Quick Create",
+    "Mobile Form"
+  ],
+  "mobileOptimized": true
+}

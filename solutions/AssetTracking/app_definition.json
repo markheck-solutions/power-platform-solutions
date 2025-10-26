@@ -1,0 +1,46 @@
+{
+  "name": "AssetTracking",
+  "uniqueName": "assettracking",
+  "description": "Model-Driven App for tracking",
+  "appType": "ModelDriven",
+  "components": {
+    "tables": [
+      "cr_trackeditem",
+      "cr_location"
+    ],
+    "dashboards": [
+      "Overview Dashboard"
+    ],
+    "businessProcessFlows": [
+      "Item Lifecycle"
+    ]
+  },
+  "navigation": {
+    "areas": [
+      {
+        "name": "Main",
+        "groups": [
+          {
+            "name": "Inventory",
+            "items": [
+              {
+                "name": "Tracked Items",
+                "type": "view"
+              },
+              {
+                "name": "Locations",
+                "type": "view"
+              },
+              {
+                "name": "Scan Item",
+                "type": "custom_page"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "theme": "default",
+  "icon": "default"
+}

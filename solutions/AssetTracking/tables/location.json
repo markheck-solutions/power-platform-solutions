@@ -1,0 +1,41 @@
+{
+  "logicalName": "cr_location",
+  "displayName": "Location",
+  "pluralName": "Locations",
+  "description": "Physical locations for item tracking",
+  "attributes": [
+    {
+      "logicalName": "cr_name",
+      "displayName": "Location Name",
+      "type": "String",
+      "required": true
+    },
+    {
+      "logicalName": "cr_building",
+      "displayName": "Building",
+      "type": "String"
+    },
+    {
+      "logicalName": "cr_floor",
+      "displayName": "Floor",
+      "type": "String"
+    },
+    {
+      "logicalName": "cr_room",
+      "displayName": "Room/Area",
+      "type": "String"
+    },
+    {
+      "logicalName": "cr_capacity",
+      "displayName": "Capacity",
+      "type": "Integer"
+    }
+  ],
+  "views": [
+    "Active Locations",
+    "All Locations"
+  ],
+  "forms": [
+    "Main Form"
+  ]
+}
